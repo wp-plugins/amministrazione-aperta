@@ -36,10 +36,6 @@ Tramite questa estensione è possibile gestire in maniera semplice e veloce tutt
 3. Inserisci `[ammap]` nella pagina/articolo in cui vuoi che venga visualizzata la tabella di Amministrazione Aperta
 In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in uso.
 
-== Frequently asked questions ==
-Presto...
-
-
 == Screenshots ==
 1. Menù Laterale
 2. Pagina "Aggiungi Nuova Spesa"
@@ -53,7 +49,3 @@ Presto...
 * Aggiunte descrizioni metabox e normativa in pagina "Credits"
 = Versione 0.1 10/12/2012 =
 * Lancio del Progetto
-
-
-== Upgrade notice ==
-Prima di effettuare qualsiasi aggiornamento, accertarsi di avere una copia di backup del database.
