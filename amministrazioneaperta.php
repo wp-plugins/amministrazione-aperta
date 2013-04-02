@@ -3,7 +3,7 @@
 Plugin Name: Amministrazione Aperta
 Plugin URI: http://www.comune.sanpellegrinoterme.bg.it/
 Description: In materia di trasparenza nella pubblica amministrazione, il D.L. 83/2012 impone alle PA di pubblicare in un’area predisposta informazioni relative a ogni spesa effettuata che superi i 1'000 euro d
-Version: 0.1
+Version: 1.0
 Author: Marco Milesi
 Author Email: milesimarco@outlook.com
 License:
@@ -143,6 +143,6 @@ function ammap_menu(){
 add_action( 'admin_menu', 'ammap_menu' );
 function ammap_settings_menu(){
 echo '
-<div class="wrap"><h2>Amministrazione Aperta</h2><br/><h3>Versione 0.2 14/12/2012</h3><br/>- Aggiunta Pagina "Credits"<br/>- Aggiunte descrizioni metabox e normativa in pagina "Credits"<br/><h3>Versione 0.1</h3>- Lancio del Progetto<hr><h3>Normativa</h3>A decorrere dal 1 gennaio 2013 la pubblicazione ai sensi del presente articolo costituisce condizione legale di efficacia del titolo legittimante delle concessioni ed attribuzioni [...] , e la sua eventuale omissione o incompletezza è rilevata  dagli organi dirigenziali e di controllo [...]. 
+<div class="wrap"><h2>Amministrazione Aperta</h2><br/><h3>Normativa</h3>A decorrere dal 1 gennaio 2013 la pubblicazione ai sensi del presente articolo costituisce condizione legale di efficacia del titolo legittimante delle concessioni ed attribuzioni [...] , e la sua eventuale omissione o incompletezza è rilevata  dagli organi dirigenziali e di controllo [...]. 
 La mancata pubblicazione dei dati e delle informazioni, configurando una violazione di legge e rappresentando elemento ostativo alla erogazioni degli importi stabiliti/dovuti, devono essere rilevate d’ufficio dagli organi dirigenziali e di controllo sotto la propria diretta responsabilità. Inoltre, è espressamente previsto che l’inottemperanza alla norma è altresì rilevabile dal destinatario della prevista concessione o attribuzione e da chiunque altro vi abbia interesse, anche ai fini del risarcimento del danno da parte dell’amministrazione, mediante azione davanti al tribunale amministrativo regionale competente.<h3>Credits</h3>Plugin sviluppato per piattaforma CMS WORDPRESS. Gratuito, semplice e affidabile, permette agli uffici di potere caricare tutte le spese superiori a € 1.000 effettuate dall’Ente. Questo plugin è gratuito e permette di risparmiare circa € 150-200/anno.<br/>Autore: Marco Milesi<br/><br/>Questa estensione di Wordpress è stata originariamente ideata per il Comune di San Pellegrino Terme.<br/><br/>Vietata la copia o la distribuzione senza autorizzazione al di fuori del repository Wordpress.org.<br/><b>Tutti i diritti riservati</b></div>
 ';}

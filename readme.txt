@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 In materia di trasparenza nella pubblica amministrazione, il D.L. 83/2012 impone alle PA di pubblicare in un’area predisposta informazioni relative a ogni spesa effettuata che superi i 1'000 euro
 
 == Description ==
-<h2>Premessa</h2>
+= Premessa =
 Al fine di ottemperare all’obbligo normativo, per ogni spesa superiore a € 1.000 documentata dall’ente è richiesta la pubblicazione di informazioni relative a:
 
 ragione sociale e dati fiscali dell’impresa beneficiaria;
@@ -27,7 +27,7 @@ consultazione più agevole possibile
 indicizzazione nei motori di ricerca
 visualizzazioni con funzioni di esportazione, il trattamento e il riutilizzo dei dati
 
-<h2>Funzioni del Plugin</h2>
+= Funzioni del Plugin =
 Tramite questa estensione è possibile gestire in maniera semplice e veloce tutte le informazioni richieste per assolvere all'obbligo di legge.
 == Installation ==
 
@@ -37,15 +37,23 @@ Tramite questa estensione è possibile gestire in maniera semplice e veloce tutt
 In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in uso.
 
 == Frequently asked questions ==
-
+Presto...
 
 
 == Screenshots ==
-
+1. Menù Laterale
+2. Pagina "Aggiungi Nuova Spesa"
 
 
 == Changelog ==
-
+= Versione 1.0 - 2.04.2013 =
+* Pubblicazione su Wordpress.org
+= Versione 0.2 14/12/2012 =
+* Aggiunta Pagina "Credits"
+* Aggiunte descrizioni metabox e normativa in pagina "Credits"
+= Versione 0.1 10/12/2012 =
+* Lancio del Progetto
 
 
 == Upgrade notice ==
+Prima di effettuare qualsiasi aggiornamento, accertarsi di avere una copia di backup del database.
