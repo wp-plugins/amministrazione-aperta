@@ -29,7 +29,7 @@ La normativa richiede dunque la soddisfazione di diversi parametri di accessibil
 
 = Funzioni del Plugin =
 Tramite questa estensione è possibile gestire in maniera semplice e veloce tutte le informazioni richieste per assolvere all'obbligo di legge.
-== Installazione ==
+== Installation ==
 
 1. Carica il contenuto estratto nella cartella `/wp-content/plugins/`
 2. Attiva il plugin dal menu 'Plugins' in WordPress
