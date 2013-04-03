@@ -31,6 +31,7 @@ La normativa richiede dunque la soddisfazione di diversi parametri di accessibil
 = Funzioni del Plugin =
 Tramite questa estensione è possibile gestire in maniera semplice e veloce tutte le informazioni richieste per assolvere all'obbligo di legge.
 In particolare, è possibile inserire direttamente dal pannello di amministrazione di Wordpress tutti i dati necessari:
+
 * Titolo
 * Importo
 * Beneficiario
@@ -40,7 +41,9 @@ In particolare, è possibile inserire direttamente dal pannello di amministrazio
 * Responsabile
 * Determina
 * Data
+
 L'utente finale potrà dunque:
+
 * Visualizzare e navigare tutte le spese, cercare quella interessata o catalogarle per data, nome,...
 * Esportare i dati in formato CSV, XLS (Excel), PDF
 Maggiori info su [amministrazioneaperta.wordpress.com](http://amministrazioneaperta.wordpress.com/ "Wordpress Plugin Gratuito – Pubblicazione delle Spese di enti locali ai sensi del D.L. n.22 giugno 2012 n. 83")
