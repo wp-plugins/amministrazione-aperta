@@ -3,7 +3,7 @@
 Plugin Name: Amministrazione Aperta
 Plugin URI: http://www.comune.sanpellegrinoterme.bg.it/
 Description: In materia di trasparenza nella pubblica amministrazione, il D.L. 83/2012 impone alle PA di pubblicare in un’area predisposta informazioni relative a ogni spesa effettuata che superi i 1'000 euro d
-Version: 1.1
+Version: 1.2
 Author: Marco Milesi
 Author Email: milesimarco@outlook.com
 License:
