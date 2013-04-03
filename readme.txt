@@ -41,6 +41,8 @@ In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in u
 == Screenshots ==
 1. Menù Laterale
 2. Pagina "Aggiungi Nuova Spesa"
+3. Tabella generata inserendo '[ammap]' nella pagina
+4. Funzioni di ricerca per l'utente finale
 
 
 == Changelog ==
