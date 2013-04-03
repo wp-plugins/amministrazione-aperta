@@ -60,7 +60,7 @@ link utili a: progetto selezionato, curriculum del soggetto incaricato, contratt
         'show_ui' => true,
         'show_in_menu' => true,
         'menu_position' => 5,
-        'menu_icon' => plugin_dir_path(__FILE__). 'openshareicon-16x16.png',
+        'menu_icon' => plugin_dir_url(__FILE__). 'openshareicon-16x16.png',
         'show_in_nav_menus' => false,
         'publicly_queryable' => true,
         'exclude_from_search' => true,
