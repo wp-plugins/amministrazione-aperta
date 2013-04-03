@@ -30,7 +30,7 @@ La normativa richiede dunque la soddisfazione di diversi parametri di accessibil
 
 = Funzioni del Plugin =
 Tramite questa estensione è possibile gestire in maniera semplice e veloce tutte le informazioni richieste per assolvere all'obbligo di legge.
-Maggiori info su [amministrazioneaperta.wordpress.com](http://amministrazioneaperta.wordpress.com/ "Wordpress Plugin Gratuito – Pubblicazione delle Spese di enti locali ai sensi del D.L. n.22 giugno 2012 n. 83"
+Maggiori info su [amministrazioneaperta.wordpress.com](http://amministrazioneaperta.wordpress.com/ "Wordpress Plugin Gratuito – Pubblicazione delle Spese di enti locali ai sensi del D.L. n.22 giugno 2012 n. 83")
 == Installation ==
 
 1. Carica il contenuto estratto nella cartella `/wp-content/plugins/`
