@@ -47,7 +47,7 @@ In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in u
 = Versione 1.1.1 - 3.04.2013 =
 * Bugfix - Riferimenti a file .js e .css corretti
 * Bugfix - Altri fix minori
-= Versione 1.1 - 2.04.2013 = (!)
+= Versione 1.1 - 2.04.2013 (!) =
 * Bugfix - Errore fatale che impediva l'attivazione del plugin su alcuni server
 = Versione 1.0 - 2.04.2013 =
 * Pubblicazione su Wordpress.org
