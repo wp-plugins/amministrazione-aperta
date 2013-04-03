@@ -46,6 +46,7 @@ L'utente finale potrà dunque:
 
 * Visualizzare e navigare tutte le spese, cercare quella interessata o catalogarle per data, nome,...
 * Esportare i dati in formato CSV, XLS (Excel), PDF
+
 Maggiori info su [amministrazioneaperta.wordpress.com](http://amministrazioneaperta.wordpress.com/ "Wordpress Plugin Gratuito – Pubblicazione delle Spese di enti locali ai sensi del D.L. n.22 giugno 2012 n. 83")
 
 = Funzioni in corso di Sviluppo =
