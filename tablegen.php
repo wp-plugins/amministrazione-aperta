@@ -1,12 +1,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="/wp-content/plugins/AmministrazioneAperta/js/jquery.dataTables.js"></script>
-<script type="text/javascript" charset="utf-8" src="/wp-content/plugins/AmministrazioneAperta/TableTools/js/TableTools.js"></script>
-<script type="text/javascript" charset="utf-8" src="/wp-content/plugins/AmministrazioneAperta/TableTools/js/ZeroClipboard.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo plugin_dir_url(__FILE__).'js/jquery.dataTables.js';?>"></script><script type="text/javascript" charset="utf-8" src="<?php echo plugin_dir_url(__FILE__).'TableTools/js/TableTools.js'?>"></script><script type="text/javascript" charset="utf-8" src="<?php echo plugin_dir_url(__FILE__).'TableTools/js/ZeroClipboard.js'?>"></script>
 
 <style type="text/css" title="currentStyle">
-			@import "/wp-content/plugins/AmministrazioneAperta/css/demo_page.css";
-			@import "/wp-content/plugins/AmministrazioneAperta/css/demo_table_jui.css";
-			@import "/wp-content/plugins/AmministrazioneAperta/css/themeroller.css";
+			@import "<?php echo plugin_dir_url(__FILE__).'css/demo_page.css';?>";			@import "<?php echo plugin_dir_url(__FILE__).'css/demo_table_jui.css';?>";			@import "<?php echo plugin_dir_url(__FILE__).'css/themeroller.css';?>";
 
 		</style>
 <script type="text/javascript" charset="utf-8">
