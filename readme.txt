@@ -1,15 +1,14 @@
 ﻿=== Amministrazione Aperta ===
 Contributors: Milmor
-Donate link: 
-Tags: amministrazione aperta spese comuni pa amministrazioni locali
+Tags: amministrazione, aperta, spese, comuni, pa, amministrazioni, locali, pubblicazione, online, imprese, enti, obbligo, legge
 Requires at least: 3.3
 Tested up to: 3.5.1
-Version: 1.2
-Stable tag: 1.2
+Version: 1.2.1
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Pubblicazione Online ai sensi del D.L. n.22 giugno 2012 n. 83 di spese e sovvenzioni concessi alle imprese da enti pubblici.
+Soluzione completa per la  pubblicazione online ai sensi del D.L. n.22 giugno 2012 n. 83 di spese e sovvenzioni concessi alle imprese da enti pubblici.
 
 == Description ==
 = Premessa =
@@ -47,6 +46,8 @@ Maggiori info su [amministrazioneaperta.wordpress.com](http://amministrazioneape
 
 = Funzioni in corso di Sviluppo =
 * Possibilità di caricare file come allegati alla spesa
+* Possibilità di visualizzazione singola per ogni spesa
+* Possibilità di caricamento massivo delle spese (back-end)
 
 == Installation ==
 
@@ -63,6 +64,9 @@ In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in u
 
 
 == Changelog ==
+= Versione 1.2.1 - 3.04.2013 =
+* Aggiunta variabile "bSort": true nella tabella per il riordino alfabetico dei dati
+* Validazione XHTML
 = Versione 1.2 - 3.04.2013 =
 * BugFix - Tutte le spese sono ora visibili
 * E' ora possibile per l'utente finale esportare i dati della tabella (PDF, CSV, EXCEL)
