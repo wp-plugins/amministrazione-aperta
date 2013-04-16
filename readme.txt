@@ -1,10 +1,10 @@
 ﻿=== Amministrazione Aperta ===
 Contributors: Milmor
-Tags: amministrazione, aperta, spese, comuni, pa, amministrazioni, locali, pubblicazione, online, imprese, enti, obbligo, legge
+Tags: amministrazione, aperta, spese, comuni, pa, amministrazioni, locali, pubblicazione, online, imprese, enti, obbligo, legge, comune, modulo
 Requires at least: 3.3
 Tested up to: 3.5.1
-Version: 1.2.1
-Stable tag: 1.2.1
+Version: 1.2.2
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,9 @@ In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in u
 
 
 == Changelog ==
+= Versione 1.2.2 - 16.04.2013 =
+* Modifiche Css Minori - Ottimizzazione CSS
+* Modifica grafica minore (nuova img background)
 = Versione 1.2.1 - 3.04.2013 =
 * Aggiunta variabile "bSort": true nella tabella per il riordino alfabetico dei dati
 * Validazione XHTML
