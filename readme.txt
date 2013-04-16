@@ -4,8 +4,8 @@ Donate link:
 Tags: amministrazione aperta spese comuni pa amministrazioni locali
 Requires at least: 3.3
 Tested up to: 3.5.1
-Version: 1.1.1
-Stable tag: 1.1.1
+Version: 1.2
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,17 +20,34 @@ Al fine di ottemperare all’obbligo normativo, per ogni spesa superiore a € 1
 * norma o titolo a base dell’attribuzione;
 * ufficio, funzionario o responsabile del procedimento amministrativo;
 * metodo e modalità per la scelta del beneficiario;
-* informazioni su: progetto, curriculum del soggetto incaricato, contratto e capitolato della prestazione, fornitura o servizio [PROSSIMA IMPLEMENTAZIONE].
+* informazioni su: progetto, curriculum del soggetto incaricato, contratto e capitolato della prestazione, fornitura o servizio.
 
 La normativa richiede dunque la soddisfazione di diversi parametri di accessibilità:
 
 * consultazione più agevole possibile;
 * indicizzazione nei motori di ricerca;
-* visualizzazioni con funzioni di esportazione, il trattamento e il riutilizzo dei dati [PROSSIMA IMPLEMENTAZIONE]
+* visualizzazioni con funzioni di esportazione, il trattamento e il riutilizzo dei dati.
 
 = Funzioni del Plugin =
 Tramite questa estensione è possibile gestire in maniera semplice e veloce tutte le informazioni richieste per assolvere all'obbligo di legge.
+In particolare, è possibile inserire direttamente dal pannello di amministrazione di Wordpress tutti i dati necessari:
+* Titolo
+* Importo
+* Beneficiario
+* Dati Fiscali
+* Norma
+* Modalità
+* Responsabile
+* Determina
+* Data
+L'utente finale potrà dunque:
+* Visualizzare e navigare tutte le spese, cercare quella interessata o catalogarle per data, nome,...
+* Esportare i dati in formato CSV, XLS (Excel), PDF
 Maggiori info su [amministrazioneaperta.wordpress.com](http://amministrazioneaperta.wordpress.com/ "Wordpress Plugin Gratuito – Pubblicazione delle Spese di enti locali ai sensi del D.L. n.22 giugno 2012 n. 83")
+
+= Funzioni in corso di Sviluppo =
+* Possibilità di caricare file come allegati alla spesa
+
 == Installation ==
 
 1. Carica il contenuto estratto nella cartella `/wp-content/plugins/`
@@ -40,12 +57,18 @@ In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in u
 
 == Screenshots ==
 1. Menù Laterale
-2. Pagina "Aggiungi Nuova Spesa"
+2. Pagina "Nuova Spesa"
 3. Tabella generata inserendo '[ammap]' nella pagina
-4. Funzioni di ricerca per l'utente finale
+4. Funzioni di ricerca/esportazione per l'utente finale
 
 
 == Changelog ==
+= Versione 1.2 - 3.04.2013 =
+* BugFix - Tutte le spese sono ora visibili
+* E' ora possibile per l'utente finale esportare i dati della tabella (PDF, CSV, EXCEL)
+* Correzioni CSS (anche per la funzione di esportazione dati)
+* Aggiunta barra di scorrimento orizzontale per avere una larghezza e leggibilità ottimale
+* Corretti problemi di adattamento larghezza
 = Versione 1.1.1 - 3.04.2013 =
 * Bugfix - Riferimenti a file .js e .css corretti
 * Bugfix - Altri fix minori
