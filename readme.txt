@@ -2,7 +2,7 @@
 Contributors: Milmor
 Tags: amministrazione, aperta, spese, comuni, pa, amministrazioni, locali, pubblicazione, online, imprese, enti, obbligo, legge, comune, modulo
 Requires at least: 3.3
-Tested up to: 3.5.1
+Tested up to: 3.6
 Version: 1.2.2
 Stable tag: 1.2.2
 License: GPLv2 or later
