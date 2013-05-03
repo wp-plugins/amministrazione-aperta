@@ -1,14 +1,14 @@
 ﻿=== Amministrazione Aperta ===
 Contributors: Milmor
-Tags: amministrazione, aperta, spese, comuni, pa, amministrazioni, locali, pubblicazione, online, imprese, enti, obbligo, legge, comune, modulo
+Tags: amministrazione, aperta, spese, comuni, pa, amministrazioni, locali, pubblicazione, online, imprese, enti, obbligo, legge, comune, modulo, decreto, 22 giugno, 2012, sovvenzioni, pubblici, pubblico, marco, milesi
 Requires at least: 3.3
 Tested up to: 3.6
-Version: 1.2.2
-Stable tag: 1.2.2
+Version: 2.0
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Soluzione completa per la  pubblicazione online ai sensi del D.L. n.22 giugno 2012 n. 83 di spese e sovvenzioni concessi alle imprese da enti pubblici.
+Soluzione completa per la pubblicazione online ai sensi del D.L. n.22 giugno 2012 n. 83 di spese e sovvenzioni concessi alle imprese da enti pubblici.
 
 == Description ==
 = Premessa =
@@ -40,6 +40,7 @@ In particolare, è possibile inserire direttamente dal pannello di amministrazio
 * Responsabile
 * Determina
 * Data
+* Eventuali file allegati [NUOVO]
 
 L'utente finale potrà dunque:
 
@@ -49,9 +50,8 @@ L'utente finale potrà dunque:
 Maggiori info su [amministrazioneaperta.wordpress.com](http://amministrazioneaperta.wordpress.com/ "Wordpress Plugin Gratuito – Pubblicazione delle Spese di enti locali ai sensi del D.L. n.22 giugno 2012 n. 83")
 
 = Funzioni in corso di Sviluppo =
-* Possibilità di caricare file come allegati alla spesa
-* Possibilità di visualizzazione singola per ogni spesa
 * Possibilità di caricamento massivo delle spese (back-end)
+* Possibilità di personalizzazione
 
 == Installation ==
 
@@ -68,6 +68,12 @@ In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in u
 
 
 == Changelog ==
+= Versione 2.0 - 02.05.2013 =
+* Possibilità di caricare file come allegati alla spesa
+* Possibilità di visualizzazione singola per ogni spesa
+* Breve introduzione alla tabella [front-end]
+* Piccole ottimizzazioni css/php
+* Integrazione PressTrend (I/O)
 = Versione 1.2.2 - 16.04.2013 =
 * Modifiche Css Minori - Ottimizzazione CSS
 * Modifica grafica minore (nuova img background)
@@ -92,4 +98,5 @@ In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in u
 * Aggiunte descrizioni metabox e normativa in pagina "Credits"
 = Versione 0.1 10/12/2012 =
 * Lancio del Progetto
+
 (!) = Aggiornamento Importante (Sicurezza/Stabilità)
