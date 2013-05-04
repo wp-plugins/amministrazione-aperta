@@ -3,8 +3,8 @@ Contributors: Milmor
 Tags: amministrazione, aperta, spese, comuni, pa, amministrazioni, locali, pubblicazione, online, imprese, enti, obbligo, legge, comune, modulo, decreto, 22 giugno, 2012, sovvenzioni, pubblici, pubblico, marco, milesi
 Requires at least: 3.3
 Tested up to: 3.6
-Version: 2.0
-Stable tag: 2.0
+Version: 2.1
+Stable tag: 2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,11 @@ In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in u
 
 
 == Changelog ==
+= Versione 2.1 - 5.05.2013 =
+* Impostazione rewrite=false (link più grezzi ma sempre funzionanti senza bisogno di riscrittura)
+* Ottimizzazioni minori - Pulizia codice Php
+* Rinnovata pagina Informazioni - Nuove stringhe per il menù
+* Risolto bug funzione per visualizzare il peso degli allegati nella visualizzazione singola
 = Versione 2.0 - 02.05.2013 =
 * Possibilità di caricare file come allegati alla spesa
 * Possibilità di visualizzazione singola per ogni spesa
