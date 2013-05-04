@@ -2,7 +2,7 @@
 /*
 Plugin Name: Amministrazione Aperta
 Plugin URI: http://amministrazioneaperta.wordpress.com/
-Description: In materia di trasparenza nella pubblica amministrazione, il D.L. 83/2012 impone alle PA di pubblicare in un’area predisposta informazioni relative a ogni spesa effettuata che superi i 1'000 euro d
+Description: Soluzione completa per la pubblicazione online ai sensi del D.L. n.22 giugno 2012 n. 83 di spese e sovvenzioni concessi alle imprese da enti pubblici.
 Version: 2.0
 Author: Marco Milesi
 Author Email: milesimarco@outlook.com
