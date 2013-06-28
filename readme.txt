@@ -68,7 +68,7 @@ In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in u
 
 
 == Changelog ==
-= Versione 2.1 - 5.05.2013 =
+= Versione 2.1 - 5.05.2013 (!) =
 * Impostazione rewrite=false (link più grezzi ma sempre funzionanti senza bisogno di riscrittura)
 * Ottimizzazioni minori - Pulizia codice Php
 * Rinnovata pagina Informazioni - Nuove stringhe per il menù

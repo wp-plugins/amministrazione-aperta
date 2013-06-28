@@ -15,8 +15,8 @@
 $(document).ready( function () {
 	var oTable = $('#ammap').dataTable( {
 		"bJQueryUI": true,
-		"sScrollX": "100%",
-		"sScrollXInner": "150%",
+		"sScrollX": "150%",
+		"sScrollXInner": "250%",
 		"bScrollCollapse": true,
 		"bSort": true,
 		"sDom": '<"H"Tfr>t<"F"ip>',
@@ -121,7 +121,7 @@ new FixedColumns( oTable );
             <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo get_post_meta(get_the_ID(), 'ammap_assegnazione', true); ?></a></td>
             <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo get_post_meta(get_the_ID(), 'ammap_responsabile', true); ?></a></td>
             <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo get_post_meta(get_the_ID(), 'ammap_determina', true); ?></a></td>
-            <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo get_post_meta(get_the_ID(), 'ammap_data', true); ?></a></td>
+            <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo date("d/m/Y", strtotime(get_post_meta(get_the_ID(), 'ammap_data', true))); ?></a></td>
         </tr>
 
 <?php endwhile; else: ?>
