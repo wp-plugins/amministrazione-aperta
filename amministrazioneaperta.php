@@ -3,11 +3,11 @@
 Plugin Name: Amministrazione Aperta
 Plugin URI: http://amministrazioneaperta.wordpress.com/
 Description: Soluzione completa per la pubblicazione online ai sensi del D.L. n.22 giugno 2012 n. 83 di spese e sovvenzioni concessi alle imprese da enti pubblici.
-Version: 2.1
+Version: 2.1.1
 Author: Marco Milesi
 Author Email: milesimarco@outlook.com
 License:
-Copyright 2011 Marco Milesi (milesimarco@outlook.com)
+Copyright 2013 Marco Milesi (milesimarco@outlook.com)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as 
