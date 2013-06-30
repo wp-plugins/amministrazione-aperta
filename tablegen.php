@@ -126,7 +126,8 @@ new FixedColumns( oTable );
 
 <?php endwhile; else: ?>
  <p>Errore query.</p>
- <?php endif; ?>
+<?php endif; ?>
+<?php wp_reset_query(); ?>
 
 
 

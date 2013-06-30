@@ -68,7 +68,9 @@ In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in u
 
 
 == Changelog ==
-= Versione 2.1.1 - 28.06.2013 (!) =
+= Versione 2.1.2 - 30.06.2013 (!) =
+* Aggiunta condizione reset_query che in alcuni casi mostrava gli articoli sotto la tabella
+= Versione 2.1.1 - 28.06.2013 =
 * Miglioramenti CSS
 * Larghezza tabella automatica
 * Date in formato gg/mm/anno

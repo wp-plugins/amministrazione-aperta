@@ -3,7 +3,7 @@
 Plugin Name: Amministrazione Aperta
 Plugin URI: http://amministrazioneaperta.wordpress.com/
 Description: Soluzione completa per la pubblicazione online ai sensi del D.L. n.22 giugno 2012 n. 83 di spese e sovvenzioni concessi alle imprese da enti pubblici.
-Version: 2.1.1
+Version: 2.1.2
 Author: Marco Milesi
 Author Email: milesimarco@outlook.com
 License:
@@ -269,7 +269,7 @@ function ammap_menu()
 add_action('admin_menu', 'ammap_menu');
 function ammap_settings_menu()
 {
-    echo '<div class="wrap"><h2>Amministrazione Aperta per Wordpress</h2>Soluzione completa per la pubblicazione online ai sensi del D.L. n.22 giugno 2012 n. 83 di spese e sovvenzioni concessi alle imprese da enti pubblici.<br/><br/>Versione <b>2.1</b><br/>Autore: <b>Marco Milesi</b><br/>Blog: <b><a href="http://amministrazioneaperta.wordpress.com/" title="Ammininistrazione Aperta for Wordpress - Official Website" target="_blank">www.amministrazioneaperta.wordpress.com</a></b><br/>Supporto & Feedback: <b><a href="http://wordpress.org/extend/plugins/amministrazione-aperta/" title="Wordpress Support" target="_blank">www.wordpress.org/extend/plugins/amministrazione-aperta</a><br/><br/><h3>Installazione</h3>Dopo avere attivato il plugin, per visualizzare le spese pubblicate è sufficiente creare una nuova pagina (es. "Amministrazione Aperta"), inserendo al suo interno il tag "<b>[ammap]</b>". Per informazioni e supporto, consultare il blog ufficiale oppure la pagina dedicata su Wordpress.org.<br/>Grazie per utilizzare Amministrazione Aperta per Wordpress!<br/>Marco';
+    echo '<div class="wrap"><h2>Amministrazione Aperta per Wordpress</h2>Soluzione completa per la pubblicazione online ai sensi del D.L. n.22 giugno 2012 n. 83 di spese e sovvenzioni concessi alle imprese da enti pubblici.<br/><br/>Versione <b>2.1.2</b><br/>Autore: <b>Marco Milesi</b><br/>Blog: <b><a href="http://amministrazioneaperta.wordpress.com/" title="Ammininistrazione Aperta for Wordpress - Official Website" target="_blank">www.amministrazioneaperta.wordpress.com</a></b><br/>Supporto & Feedback: <b><a href="http://wordpress.org/extend/plugins/amministrazione-aperta/" title="Wordpress Support" target="_blank">www.wordpress.org/extend/plugins/amministrazione-aperta</a><br/><br/><h3>Installazione</h3>Dopo avere attivato il plugin, per visualizzare le spese pubblicate è sufficiente creare una nuova pagina (es. "Amministrazione Aperta"), inserendo al suo interno il tag "<b>[ammap]</b>". Per informazioni e supporto, consultare il blog ufficiale oppure la pagina dedicata su Wordpress.org.<br/>Grazie per utilizzare Amministrazione Aperta per Wordpress!<br/>Marco';
 }
 ?>
 <?php
