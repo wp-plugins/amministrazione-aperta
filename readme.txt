@@ -3,8 +3,8 @@ Contributors: Milmor
 Tags: amministrazione, aperta, spese, comuni, pa, amministrazioni, locali, pubblicazione, online, imprese, enti, obbligo, legge, comune, modulo, decreto, 22 giugno, 2012, sovvenzioni, pubblici, pubblico, marco, milesi
 Requires at least: 3.3
 Tested up to: 3.6
-Version: 2.1.2
-Stable tag: 2.1.2
+Version: 2.1.3
+Stable tag: 2.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,10 @@ In alternativa, aggiungi <?php echo do_shortcode('[ammap]') ?> nel template in u
 
 
 == Changelog ==
+= Versione 2.1.3 - 23.07.2013 (!) =
+* Aggiunte info autore in readme.txt
+* BugFix - Risolto problema che causava l'apparizione dello shortcode sempre in alto
+* Aggiunto avviso Amm.Trasparente una volta installato il plugin
 = Versione 2.1.2 - 30.06.2013 (!) =
 * Aggiunta condizione reset_query che in alcuni casi mostrava gli articoli sotto la tabella
 = Versione 2.1.1 - 28.06.2013 =
