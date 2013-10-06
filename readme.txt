@@ -12,12 +12,12 @@ Soluzione completa per la pubblicazione di sovvenzioni, contributi, sussidi e va
 
 == Description ==
 
-> Si consiglia di utilizzare questo plugin insieme a [Amministrazione Trasparente Plugin per Wordpress](http://wordpress.org/plugins/amministrazione-trasparente Amministrazione Trasparente Plugin per Wordpress"). Infatti, per una pubblicazione efficiente, è consigliabile creare una voce di Amministrazione Trasparente inserendo al suo interno il tag di Amm.Aperta
+> Si consiglia di utilizzare questo plugin insieme a [Amministrazione Trasparente Plugin per Wordpress](http://wordpress.org/plugins/amministrazione-trasparente "Amministrazione Trasparente Plugin per Wordpress"). Infatti, per una pubblicazione efficiente, è consigliabile creare una voce di Amministrazione Trasparente inserendo al suo interno il tag di Amm.Aperta
 
 Soluzione completa per la pubblicazione degli open data richiesti dal comma 2 dell'art. 26 del D.Lgs. 14 marzo 2013 n. 33 (a seguito dell'abrogazione dell'art. 18 del D.L. n.22 giugno 2012 convertito dalla Legge 7 agosto 2012 n. 134) di sovvenzioni, contributi, sussidi e vantaggi economici.
 
 = Premessa =
-Al fine di ottemperare all’obbligo normativo per la gestione degli OPENDATA di [Amministrazione Trasparente](http://wordpress.org/plugins/amministrazione-trasparente Amministrazione Trasparente Plugin per Wordpress"), è richiesta la pubblicazione di sovvenzioni, contributi, sussidi e vantaggi economici con le seguenti informazioni:
+Al fine di ottemperare all’obbligo normativo per la gestione degli OPENDATA di [Amministrazione Trasparente](http://wordpress.org/plugins/amministrazione-trasparente "Amministrazione Trasparente Plugin per Wordpress"), è richiesta la pubblicazione di sovvenzioni, contributi, sussidi e vantaggi economici con le seguenti informazioni:
 
 * ragione sociale e dati fiscali dell’impresa beneficiaria;
 * importo di spesa;
