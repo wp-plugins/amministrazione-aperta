@@ -86,7 +86,13 @@ new FixedColumns( oTable );
 } );
 
 </script>
-<p>In questa pagina sono pubblicate tutte le informazioni richieste dal Decreto Sviluppo del DL 22 giugno 2012 n.83 convertito dalla legge 7 agosto 2012 n.134</p>
+<p>Anno di Riferimento:
+<?php if ($anno=="all") {
+	echo '<b>TUTTI</b>';
+} else {
+	echo '<b>' . $anno . '</b>';
+}
+?></p>
 <table id="ammap" class="display">
 
     <thead>
@@ -108,7 +114,13 @@ new FixedColumns( oTable );
     </thead>
     <tbody>
 
-<?php  query_posts( array( 'post_type' => spesa, 'orderby' => date, 'order' => DESC, 'posts_per_page' => -1  ) ); ?>
+	
+<?php if ($anno=="all") {
+query_posts( array( 'post_type' => spesa, 'orderby' => date, 'order' => DESC, 'posts_per_page' => -1  ) );
+} else {
+query_posts( array( 'post_type' => spesa, 'orderby' => date, 'year' => $anno, 'order' => DESC, 'posts_per_page' => -1  ) );
+}
+?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
