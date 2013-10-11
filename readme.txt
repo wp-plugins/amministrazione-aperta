@@ -3,8 +3,8 @@ Contributors: Milmor
 Tags: amministrazione, aperta, spese, comuni, pa, amministrazioni, locali, pubblicazione, online, imprese, enti, obbligo, legge, comune, modulo, decreto, 22 giugno, 2012, sovvenzioni, pubblici, pubblico, marco, milesi, amministrazione, trasparente
 Requires at least: 3.3
 Tested up to: 3.6
-Version: 2.2
-Stable tag: 2.2
+Version: 2.2.1
+Stable tag: 2.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,7 +71,12 @@ In alternativa, aggiungi `<?php echo do_shortcode('[ammap]') ?>` o `<?php echo d
 
 
 == Changelog ==
-= Versione 2.2 // Nuovo Nome: Amministrazione Trasparente (OPENDATA) - 23.09.2013 =
+
+= Versione 2.2.1 - 11.10.2013 =
+* Ripristinata voce di menù 'Spese'
+* Aggiunte nuove "Modalità Assegnazione": Cottimo Fiduciario / Mercato Elettronico / Convenzione CONSIP / Procedura negoziata / Procedura ristretta / Procedura selettiva | Grazie a Andrea Longhi & Igor Vita
+
+= Versione 2.2 // Nuovo Nome: Amm. Aperta (Contributi & Concessioni PA) - 6.10.2013 =
 * Nuovo nome
 * **Aggiunta** possibilità di dividere le spese per anno (es. tag [ammap anno="2013"]
 * **Aggiunta** possibilità di inserire testo libero

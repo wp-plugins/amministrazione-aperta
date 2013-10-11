@@ -3,7 +3,7 @@
 Plugin Name: Amministrazione Aperta
 Plugin URI: http://wordpress.org/extend/plugins/amministrazione-aperta
 Description: Soluzione completa per la pubblicazione di sovvenzioni, contributi, sussidi e vantaggi economici, anche in formato open data, come richiesto dal D.Lgs. 33/2013
-Version: 2.2
+Version: 2.2.1
 Author: Marco Milesi
 Author Email: milesimarco@outlook.com
 Author URI: http://marcomilesi.ml
@@ -36,7 +36,7 @@ function register_cpt_spesa()
         'not_found' => _x('Nessun elemento trovato', 'spesa'),
         'not_found_in_trash' => _x('Nessun elemento trovato', 'spesa'),
         'parent_item_colon' => _x('Parent Spesa:', 'spesa'),
-        'menu_name' => _x('OpenDATA', 'spesa')
+        'menu_name' => _x('Spese', 'spesa')
     );
     $args   = array(
         'labels' => $labels,
@@ -115,10 +115,6 @@ $my_meta = new AT_Meta_Box($config);
 * Campi personalizzati del Plugin - Usa API terze parti
 */
 $prefix  = "ammap_";
-//text field
-$my_meta->addWysiwyg($prefix . 'wysiwyg', array(
-    'name' => ' Note libere e caricamento file'
-));
 $my_meta->addText($prefix . 'beneficiario', array(
     'name' => 'Beneficiario'
 ));
@@ -139,7 +135,13 @@ $my_meta->addText($prefix . 'determina', array(
 ));
 $my_meta->addSelect($prefix . 'assegnazione', array(
     'Chiamata Diretta' => 'Chiamata Diretta',
-    'Bando Pubblico' => 'Bando Pubblico'
+    'Bando Pubblico' => 'Bando Pubblico',
+	'Cottimo Fiduciario' => 'Cottimo Fiduciario',
+    'Mercato Elettronico' => 'Mercato Elettronico',
+    'Convenzione CONSIP' => 'Convenzione CONSIP',
+	'Procedura negoziata' => 'Procedura negoziata',
+    'Procedura ristretta' => 'Procedura ristretta',
+    'Procedura selettiva' => 'Procedura selettiva'
 ), array(
     'name' => 'Modalità Assegnazione',
     'std' => array(
@@ -148,6 +150,10 @@ $my_meta->addSelect($prefix . 'assegnazione', array(
 ));
 $my_meta->addDate($prefix . 'data', array(
     'name' => 'Data'
+));
+//text field
+$my_meta->addWysiwyg($prefix . 'wysiwyg', array(
+    'name' => ' Note libere e caricamento file'
 ));
 /*
 
@@ -267,7 +273,7 @@ function ammap_settings_menu()
 	echo '/>&nbsp;Spunta questa casella per disabilitare la visualizzazione automatica degli allegati (es. se vuoi inserirli manualmente nel testo o usi un plugin per la loro visualizzazione come WP Attachments)</td></tr>
 	<p class="submit"><input type="submit"  class="button-primary" name="Submit" value="Aggiorna Impostazioni" /></p>';
 	
-    echo '<hr><br/>Versione <b>2.1.3</b><br/>Autore: <b>Marco Milesi</b><br/Supporto & Feedback: <b><a href="http://wordpress.org/extend/plugins/amministrazione-aperta/" title="Wordpress Support" target="_blank">www.wordpress.org/extend/plugins/amministrazione-aperta</a><br/><br/><h3>Installazione</h3>Dopo avere attivato il plugin, per visualizzare le spese pubblicate è sufficiente creare una nuova pagina (es. "Amministrazione Aperta"), inserendo al suo interno il tag "<b>[ammap]</b> o [ammap anno="2013"]". Per informazioni e supporto, consultare il blog ufficiale oppure la pagina dedicata su Wordpress.org.<br/>Grazie per utilizzare Amministrazione Aperta per Wordpress!<br/>Marco';
+    echo '<hr><br/>Versione <b>2.2.1</b><br/>Autore: <b>Marco Milesi</b><br/Supporto & Feedback: <b><a href="http://wordpress.org/extend/plugins/amministrazione-aperta/" title="Wordpress Support" target="_blank">www.wordpress.org/extend/plugins/amministrazione-aperta</a><br/><br/><h3>Installazione</h3>Dopo avere attivato il plugin, per visualizzare le spese pubblicate è sufficiente creare una nuova pagina (es. "Amministrazione Aperta"), inserendo al suo interno il tag "<b>[ammap]</b> o [ammap anno="2013"]". Per informazioni e supporto, consultare il blog ufficiale oppure la pagina dedicata su Wordpress.org.<br/>Grazie per utilizzare Amministrazione Aperta per Wordpress!<br/>Marco';
 }
 ?>
 <?php
