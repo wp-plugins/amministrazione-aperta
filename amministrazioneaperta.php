@@ -139,6 +139,7 @@ $my_meta->addSelect($prefix . 'assegnazione', array(
 	'Cottimo Fiduciario' => 'Cottimo Fiduciario',
     'Mercato Elettronico' => 'Mercato Elettronico',
     'Convenzione CONSIP' => 'Convenzione CONSIP',
+	'Procedura aperta' => 'Procedura aperta',
 	'Procedura negoziata' => 'Procedura negoziata',
     'Procedura ristretta' => 'Procedura ristretta',
     'Procedura selettiva' => 'Procedura selettiva'

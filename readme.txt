@@ -74,7 +74,7 @@ In alternativa, aggiungi `<?php echo do_shortcode('[ammap]') ?>` o `<?php echo d
 
 = Versione 2.2.1 - 11.10.2013 =
 * Ripristinata voce di menù 'Spese'
-* Aggiunte nuove "Modalità Assegnazione": Cottimo Fiduciario / Mercato Elettronico / Convenzione CONSIP / Procedura negoziata / Procedura ristretta / Procedura selettiva | Grazie a Andrea Longhi & Igor Vita
+* Aggiunte nuove "Modalità Assegnazione": Cottimo Fiduciario / Mercato Elettronico / Convenzione CONSIP / Procedura aperta / Procedura negoziata / Procedura ristretta / Procedura selettiva | Grazie a Andrea Longhi & Igor Vita
 
 = Versione 2.2 // Nuovo Nome: Amm. Aperta (Contributi & Concessioni PA) - 6.10.2013 =
 * Nuovo nome
