@@ -3,8 +3,8 @@ Contributors: Milmor
 Tags: amministrazione, aperta, spese, comuni, pa, amministrazioni, locali, pubblicazione, online, imprese, enti, obbligo, legge, comune, modulo, decreto, 22 giugno, 2012, sovvenzioni, pubblici, pubblico, marco, milesi, amministrazione, trasparente
 Requires at least: 3.3
 Tested up to: 3.6
-Version: 2.2.1
-Stable tag: 2.2.1
+Version: 2.2.2
+Stable tag: 2.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,9 @@ In alternativa, aggiungi `<?php echo do_shortcode('[ammap]') ?>` o `<?php echo d
 
 
 == Changelog ==
+
+= Versione 2.2.2 - 25.10.2013 =
+* Corretto possibile conflitto nella funzione di cambio titolo della voce nell'editor di WP
 
 = Versione 2.2.1 - 11.10.2013 =
 * Ripristinata voce di menù 'Spese'
