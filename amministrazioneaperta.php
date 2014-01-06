@@ -3,7 +3,7 @@
 Plugin Name: Amministrazione Aperta
 Plugin URI: http://wordpress.org/extend/plugins/amministrazione-aperta
 Description: Soluzione completa per la pubblicazione di sovvenzioni, contributi, sussidi e vantaggi economici, anche in formato open data, come richiesto dal D.Lgs. 33/2013
-Version: 2.2.2
+Version: 2.2.3
 Author: Marco Milesi
 Author Email: milesimarco@outlook.com
 Author URI: http://marcomilesi.ml
@@ -274,7 +274,7 @@ function ammap_settings_menu()
 	echo '/>&nbsp;Spunta questa casella per disabilitare la visualizzazione automatica degli allegati (es. se vuoi inserirli manualmente nel testo o usi un plugin per la loro visualizzazione come WP Attachments)</td></tr>
 	<p class="submit"><input type="submit"  class="button-primary" name="Submit" value="Aggiorna Impostazioni" /></p>';
 	
-    echo '<hr><br/>Versione <b>2.2.2</b><br/>Autore: <b>Marco Milesi</b><br/Supporto & Feedback: <b><a href="http://wordpress.org/extend/plugins/amministrazione-aperta/" title="Wordpress Support" target="_blank">www.wordpress.org/extend/plugins/amministrazione-aperta</a><br/><br/><h3>Installazione</h3>Dopo avere attivato il plugin, per visualizzare le spese pubblicate è sufficiente creare una nuova pagina (es. "Amministrazione Aperta"), inserendo al suo interno il tag "<b>[ammap]</b> o [ammap anno="2013"]". Per informazioni e supporto, consultare il blog ufficiale oppure la pagina dedicata su Wordpress.org.<br/>Grazie per utilizzare Amministrazione Aperta per Wordpress!<br/>Marco';
+    echo '<hr><br/>Versione <b>2.2.3</b><br/>Autore: <b>Marco Milesi</b><br/Supporto & Feedback: <b><a href="http://wordpress.org/extend/plugins/amministrazione-aperta/" title="Wordpress Support" target="_blank">www.wordpress.org/extend/plugins/amministrazione-aperta</a><br/><br/><h3>Installazione</h3>Dopo avere attivato il plugin, per visualizzare le spese pubblicate è sufficiente creare una nuova pagina (es. "Amministrazione Aperta"), inserendo al suo interno il tag "<b>[ammap]</b> o [ammap anno="2013"]". Per informazioni e supporto, consultare il blog ufficiale oppure la pagina dedicata su Wordpress.org.<br/>Grazie per utilizzare Amministrazione Aperta per Wordpress!<br/>Marco';
 }
 ?>
 <?php
