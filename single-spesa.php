@@ -14,7 +14,6 @@ get_header(); ?>
             <header class="entry-header">
  
                 <!-- Stampa su schermo tutte le informazioni -->
-                TEST
             </header>
  
         </article>

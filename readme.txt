@@ -1,32 +1,21 @@
-﻿=== Amm. Aperta (Contributi & Concessioni PA) ===
+﻿=== Amministrazione Aperta ===
 Contributors: Milmor
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F2JK36SCXKTE2
 Tags: amministrazione, aperta, spese, comuni, pa, amministrazioni, locali, pubblicazione, online, imprese, enti, obbligo, legge, comune, modulo, decreto, 22 giugno, 2012, sovvenzioni, pubblici, pubblico, marco, milesi, amministrazione, trasparente
 Requires at least: 3.3
 Tested up to: 3.6
-Version: 2.2.3
-Stable tag: 2.2.3
+Version: 3 
+Stable tag: 3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Soluzione completa per la pubblicazione di sovvenzioni, contributi, sussidi e vantaggi economici, anche in formato open data, come richiesto dal D.Lgs. 33/2013
+Software per la pubblicazione di concessioni (sovvenzioni, contributi, sussidi e vantaggi economici) e incarichi, anche in formato open data, come richiesto dal D.Lgs 33/2013.
 
 == Description ==
 
-> Si consiglia di utilizzare questo plugin insieme a [Amministrazione Trasparente Plugin per Wordpress](http://wordpress.org/plugins/amministrazione-trasparente "Amministrazione Trasparente Plugin per Wordpress"). Infatti, per una pubblicazione efficiente, è consigliabile creare una voce di Amministrazione Trasparente inserendo al suo interno il tag di Amm.Aperta
+Amministrazione Aperta è un plugin nato per assolvere all’obbligo normativo per la gestione opendata di [Amministrazione Trasparente](http://wordpress.org/plugins/amministrazione-trasparente "Amministrazione Trasparente Plugin per Wordpress"), per i quali è richiesta la pubblicazione di sovvenzioni, contributi, sussidi, vantaggi economici, incarichi e consulenze.
 
-Soluzione completa per la pubblicazione degli open data richiesti dal comma 2 dell'art. 26 del D.Lgs. 14 marzo 2013 n. 33 (a seguito dell'abrogazione dell'art. 18 del D.L. n.22 giugno 2012 convertito dalla Legge 7 agosto 2012 n. 134) di sovvenzioni, contributi, sussidi e vantaggi economici.
-
-= Premessa =
-Al fine di ottemperare all’obbligo normativo per la gestione degli OPENDATA di [Amministrazione Trasparente](http://wordpress.org/plugins/amministrazione-trasparente "Amministrazione Trasparente Plugin per Wordpress"), è richiesta la pubblicazione di sovvenzioni, contributi, sussidi e vantaggi economici con le seguenti informazioni:
-
-* ragione sociale e dati fiscali dell’impresa beneficiaria;
-* importo di spesa;
-* norma o titolo a base dell’attribuzione;
-* ufficio, funzionario o responsabile del procedimento amministrativo;
-* metodo e modalità per la scelta del beneficiario;
-* informazioni su: progetto, curriculum del soggetto incaricato, contratto e capitolato della prestazione, fornitura o servizio.
-
-La normativa richiede dunque la soddisfazione di diversi parametri di accessibilità:
+Questo plugin permette un facile inserimento di tutti i dati tramite l'interfaccia di amministrazione di WordPress, e possiede shortcode personalizzabili per la visualizzazione in forma tabellare di tutte le informazioni, nel pieno rispetto dei più severi parametri di accessibilità vigenti:
 
 * consultazione più agevole possibile;
 * indicizzazione nei motori di ricerca;
@@ -37,40 +26,49 @@ Tramite questa estensione è possibile gestire in maniera semplice e veloce tutt
 In particolare, è possibile inserire direttamente dal pannello di amministrazione di Wordpress tutti i dati necessari:
 
 * Titolo
-* TESTO A PIACERE
-* Importo
+* Importo (previsto/erogato)
 * Beneficiario
 * Dati Fiscali
 * Norma
 * Modalità
 * Responsabile
 * Determina
-* Data
-* Eventuali file allegati
+* Data (inizio/fine)
+* Eventuali file allegati tramite upload e testo a piacere (editor WYSIWYG)
 
 L'utente finale potrà dunque:
 
 * Visualizzare e navigare tutte le spese, cercare quella interessata o catalogarle per data, nome,...
 * Esportare i dati in formato CSV, XLS (Excel), PDF
 
+
 > **ATTENZIONE** | **"For each author’s protection [***] we want to make certain that everyone understands that there is no warranty for this free software.** In accordo con la licenza GPL v.2 con cui questo software viene fornito, **declino** ogni responsabilità per eventuali inadempimenti legislativi e/o altri problemi legali e/o tecnici derivanti, implicitamente o esplicitamente, dall'utilizzo di questo plugin Wordpress o da un'affrettata configurazione dello stesso (ivi compresi eventuali aggiornamenti). E' compito del gestore del sito assicurarsi che il modulo funzioni correttamente e adempia agli obblighi di legge e, al contempo, è obbligo degli operatori/impiegati/dipendenti/funzionari preposti alla gestione dell'Amministrazione Trasparente la pubblicazione degli opportuni dati.
+
+> **EN** | This plugin is developed for **schools, universities, municipalities and local authorities** of **ITALY** and respects their legal parameters. The installation of this plugin on amateur websites and/or portals not subject to 'Amministrazione Trasparente' legislation is a waste of time since the purpose of this software is the posting of data in a legal and validated way.
 
 == Installation ==
 
 1. Carica il contenuto estratto nella cartella `/wp-content/plugins/`
 2. Attiva il plugin dal menu 'Plugins' in WordPress
-3. Inserisci `[ammap]` nella pagina/articolo in cui vuoi che venga visualizzata la tabella di Amministrazione Aperta
-4. A partire dalla versione 2.2 è possibile suddividere le spese per anno (come richiesto dalla normativa) utilizzando tag del tipo [ammap anno=2013]. Utilizzando il vecchio tag [ammap] verranno invece mostrate TUTTE le voci presenti nel database!
-In alternativa, aggiungi `<?php echo do_shortcode('[ammap]') ?>` o `<?php echo do_shortcode('[ammap anno=2013]') ?>` nel template in uso.
+
+= Shortcode =
+Per la visualizzazione dei dati in forma tabellare sono disponibli diversi shortcode personalizzabili. Per leggere quali sono e come utilizzarli consultare la pagina [wpgov.it/soluzioni/amministrazione-aperta/shortcode](http://wpgov.it/soluzioni/amministrazione-aperta/shortcode/)
 
 == Screenshots ==
 1. Menù Laterale
 2. Pagina "Nuova Spesa"
-3. Tabella generata inserendo '[ammap]' nella pagina
+3. Esempio di tabella generata
 4. Funzioni di ricerca/esportazione per l'utente finale
 
-
 == Changelog ==
+> Questa è la lista completa di tutti gli aggiornamenti, test e correzioni. Ogni volta che una nuova versione viene rilasciata assicuratevi di aggiornare il prima possibile per usufruire delle ultime migliorie!
+
+= Versione 3 #Gasw (Giornata Apera sul Web) - 26.05.2014 =
+* Rebranding wpgov.it
+* Introduzione supporto per incarichi e consulenze
+* Ottimizzazioni e revisioni varie
+* Introduzione di nuovi shortcode
+* Molto altro...
 
 = Versione 2.2.3 - 6.01.2014 =
 * Corretta errata visualizzazione della data

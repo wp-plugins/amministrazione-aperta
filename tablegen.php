@@ -9,8 +9,6 @@
 			@import "<?php echo plugin_dir_url(__FILE__).'css/themeroller.css';?>";
 </style>
 
-
-
 <script type="text/javascript" charset="utf-8">
 $(document).ready( function () {
 	var oTable = $('#ammap').dataTable( {
@@ -52,33 +50,19 @@ $(document).ready( function () {
 					"sFileName": "<?php echo get_bloginfo( 'name' );?>_amministrazioneaperta.csv"
 				},
 				{
-
 					"sExtends": "xls",
-
 					"sButtonText": "EXCEL",
-
 					"sFileName": "<?php echo get_bloginfo( 'name' );?>_amministrazioneaperta.xls"
-
 				},
-
 				{
-
 					"sExtends": "pdf",
-
 					"sButtonText": "PDF",
-
 					"sPdfOrientation": "landscape",
-
 					"sPdfMessage": "<?php echo get_bloginfo( 'name' );?> - Amministrazione Aperta",
-
 					"sFileName": "<?php echo get_bloginfo( 'name' );?>_amministrazioneaperta.pdf"
-
 				}
-
 			]
-
 		}
-
 	} );
 
 new FixedColumns( oTable );
@@ -94,10 +78,16 @@ new FixedColumns( oTable );
 }
 ?></p>
 <table id="ammap" class="display">
-
     <thead>
-
         <tr>
+			<?php if ($tipo == "incarico") { ?>
+			<th>Ragione dell'Incarico</th>
+            <th>Soggetto percettore</th>
+            <th>Importo lordo previsto</th>
+            <th>Importo lordo erogato</th>
+            <th>Data di inizio</th>
+            <th>Data di fine</th>
+			<?php } else { ?>
             <th>Titolo</th>
             <th>Importo</th>
             <th>Beneficiario</th>
@@ -107,44 +97,24 @@ new FixedColumns( oTable );
             <th>Responsabile</th>
             <th>Determina</th>
             <th>Data</th>
+			<?php } ?>
         </tr>
-
-
-
     </thead>
     <tbody>
-
 	
 <?php if ($anno=="all") {
-query_posts( array( 'post_type' => spesa, 'orderby' => date, 'order' => DESC, 'posts_per_page' => -1  ) );
+query_posts( array( 'post_type' => $tipo, 'orderby' => date, 'order' => DESC, 'posts_per_page' => -1  ) );
 } else {
-query_posts( array( 'post_type' => spesa, 'orderby' => date, 'year' => $anno, 'order' => DESC, 'posts_per_page' => -1  ) );
+query_posts( array( 'post_type' => $tipo, 'orderby' => date, 'order' => DESC, 'posts_per_page' => -1  ) );
 }
 ?>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 
+	if ($tipo == "spesa") { include('tablegen_spesa.php'); } else if ($tipo == "incarico") { include('tablegen_incarico.php'); } else { echo 'Parametro $tipo errato. Impossibile valorizzare il campo'; }
 
-        <tr>
-            <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></td>
-            <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">€ <?php echo get_post_meta(get_the_ID(), 'ammap_importo', true); ?></a></td>
-            <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo get_post_meta(get_the_ID(), 'ammap_beneficiario', true); ?></a></td>
-            <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo get_post_meta(get_the_ID(), 'ammap_fiscale', true); ?></a></td>
-            <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo get_post_meta(get_the_ID(), 'ammap_norma', true); ?></a></td>
-            <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo get_post_meta(get_the_ID(), 'ammap_assegnazione', true); ?></a></td>
-            <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo get_post_meta(get_the_ID(), 'ammap_responsabile', true); ?></a></td>
-            <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo get_post_meta(get_the_ID(), 'ammap_determina', true); ?></a></td>
-            <td><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-<?php
-$a = get_post_meta(get_the_ID(), 'ammap_data', true);
-$b = str_replace( ',', '', $a );
-$a = $b;
-echo date("d/m/Y", strtotime($a));
-?>
-</a></td>
-        </tr>
-
-<?php endwhile; else: ?>
- <p>Errore query.</p>
+endwhile; else: ?>
+ <p>Errore query.<br/>
+ <small>Si è verificato un errore durante l'esecuzione della query scelta. E' possibile che siano stati impostati parametri errati o che non ci siano dati da elaborare</small></p>
 <?php endif; ?>
 <?php wp_reset_query(); ?>
 
