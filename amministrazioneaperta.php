@@ -3,7 +3,7 @@
 Plugin Name: Amministrazione Aperta
 Plugin URI: http://wpgov.it/soluzioni/amministrazione-aperta/
 Description: Software per la pubblicazione di concessioni (sovvenzioni, contributi, sussidi e vantaggi economici) e incarichi, anche in formato open data, come richiesto dal D.Lgs 33/2013.
-Version: 3.0.2
+Version: 3.0.3
 Author: Marco Milesi
 Author Email: milesimarco@outlook.com
 Author URI: http://marcomilesi.ml
@@ -37,11 +37,11 @@ function aa_register_post_fields()
 	
 }
  
-if(!(function_exists('register_taxonomy_areesettori'))){
-add_action( 'init', 'register_taxonomy_areesettori' );
+if(!(function_exists('wpgov_register_taxonomy_areesettori'))){
+add_action( 'init', 'wpgov_register_taxonomy_areesettori' );
 	
 
-	function register_taxonomy_areesettori() {
+	function wpgov_register_taxonomy_areesettori() {
 
 		$labels = array( 
 			'name' => _x( 'Uffici - Settori - Centri di costo', 'areesettori' ),
