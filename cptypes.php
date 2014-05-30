@@ -91,7 +91,21 @@
 			'query_var' => true
 		);
 		register_taxonomy( 'tipo_incarico', array('incarico'), $args );
-	if(!term_exists('Incarichi conferiti o autorizzati ai propri dipendenti', 'tipo_incarico')) { wp_insert_term('Incarichi conferiti o autorizzati ai propri dipendenti', 'tipo_incarico'); }
-	if(!term_exists('Incarichi conferiti o autorizzati a dipendenti di altra Amministrazione', 'tipo_incarico')) { wp_insert_term('Incarichi conferiti o autorizzati a dipendenti di altra Amministrazione', 'tipo_incarico'); }
-	if(!term_exists('Incarichi conferiti o autorizzati a soggetti estranei alla Pubblica Amministrazione', 'tipo_incarico')) { wp_insert_term('Incarichi conferiti o autorizzati a soggetti estranei alla Pubblica Amministrazione', 'tipo_incarico'); }
+	if(!term_exists('Incarichi conferiti o autorizzati ai propri dipendenti', 'tipo_incarico')) {
+		wp_insert_term('Incarichi conferiti o autorizzati ai propri dipendenti', 'tipo_incarico');
+	}
+	if(!term_exists('Incarichi conferiti a dipendenti di altra Amministrazione', 'tipo_incarico')) {
+		wp_insert_term('Incarichi conferiti a dipendenti di altra Amministrazione', 'tipo_incarico');
+	}
+	if(!term_exists('Incarichi conferiti a soggetti estranei alla Pubblica Amministrazione', 'tipo_incarico')) {
+		wp_insert_term('Incarichi conferiti a soggetti estranei alla Pubblica Amministrazione', 'tipo_incarico');
+	}
+	if(term_exists('Incarichi conferiti o autorizzati a dipendenti di altra Amministrazione', 'tipo_incarico')) {
+		$id_1 = get_term_by('name', 'Incarichi conferiti o autorizzati a dipendenti di altra Amministrazione', 'tipo_incarico');
+		wp_delete_term($id_1->term_id, 'tipo_incarico');
+	}
+	if(term_exists('Incarichi conferiti o autorizzati a soggetti estranei alla Pubblica Amministrazione', 'tipo_incarico')) {
+		$id_2 = get_term_by('name', 'Incarichi conferiti o autorizzati a soggetti estranei alla Pubblica Amministrazione', 'tipo_incarico');
+		wp_delete_term($id_2->term_id, 'tipo_incarico');
+	}
 ?>

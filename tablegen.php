@@ -101,13 +101,8 @@ new FixedColumns( oTable );
         </tr>
     </thead>
     <tbody>
-	
-<?php if ($anno=="all") {
-query_posts( array( 'post_type' => $tipo, 'orderby' => date, 'order' => DESC, 'posts_per_page' => -1  ) );
-} else {
-query_posts( array( 'post_type' => $tipo, 'orderby' => date, 'order' => DESC, 'posts_per_page' => -1  ) );
-}
-?>
+
+<?php query_posts( array( 'post_type' => $tipo, 'orderby' => date, 'order' => DESC, 'posts_per_page' => -1  ) ); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 	if ($tipo == "spesa") { include('tablegen_spesa.php'); } else if ($tipo == "incarico") { include('tablegen_incarico.php'); } else { echo 'Parametro $tipo errato. Impossibile valorizzare il campo'; }

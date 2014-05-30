@@ -30,8 +30,8 @@ $my_meta->addText($prefix . 'importo_previsto', array(
 $my_meta->addText($prefix . 'importo', array(
     'name' => 'Compenso Lordo Erogato'
 ));
-$my_meta->addDate($prefix . 'data_inizio', array('name'=> 'Data Inizio', 'format' => 'd/m/yy'));
-$my_meta->addDate($prefix . 'data_fine', array('name'=> 'Data Fine', 'format' => 'd/m/yy'));
+$my_meta->addDate($prefix . 'data_inizio', array('name'=> 'Data Inizio', 'format' => 'd-m-yy'));
+$my_meta->addDate($prefix . 'data_fine', array('name'=> 'Data Fine', 'format' => 'd-m-yy'));
 //text field
 $my_meta->addWysiwyg($prefix . 'wysiwyg', array(
     'name' => 'Note & documentazione',

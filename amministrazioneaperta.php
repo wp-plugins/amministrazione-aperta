@@ -3,7 +3,7 @@
 Plugin Name: Amministrazione Aperta
 Plugin URI: http://wpgov.it/soluzioni/amministrazione-aperta/
 Description: Software per la pubblicazione di concessioni (sovvenzioni, contributi, sussidi e vantaggi economici) e incarichi, anche in formato open data, come richiesto dal D.Lgs 33/2013.
-Version: 3.0.4
+Version: 3.1
 Author: Marco Milesi
 Author Email: milesimarco@outlook.com
 Author URI: http://marcomilesi.ml
@@ -32,6 +32,7 @@ function aa_register_post_types()
 add_action('admin_init', 'aa_register_post_fields');
 function aa_register_post_fields()
 {
+	update_option( 'aa_version_number', '3.1' );
 	include(plugin_dir_path(__FILE__) . 'fields_spese.php');
 	include(plugin_dir_path(__FILE__) . 'fields_incarichi.php');
 	
@@ -108,32 +109,12 @@ add_shortcode('ammap', 'ammap_func');
 include(plugin_dir_path(__FILE__) . 'meta-box-class/my-meta-box-class.php');
 
 /* =========== Visualizzazione Singola */
-add_action('template_redirect', 'ft_job_cpt_template');
-function ft_job_cpt_template()
+add_action('template_redirect', 'aa_job_cpt_template');
+function aa_job_cpt_template()
 {
-		global $wp, $wp_query;
-		if (isset($wp->query_vars['post_type']) && $wp->query_vars['post_type'] == 'spesa') {
-			if (have_posts()) {
-				add_filter('the_content', 'ft_job_cpt_template_filter');
-			} else {
-				$wp_query->is_404 = true;
-			}
-		}
+	include(plugin_dir_path(__FILE__) . 'single_hacks.php');
 }
-function ft_job_cpt_template_filter($content)
-{
-    global $wp_query;
-    $jobID = $wp_query->post->ID;
-	echo get_post_meta(get_the_ID(), 'ammap_wysiwyg', true) . '<br/>';
-    echo '<strong>Importo: </strong>€ ' . get_post_meta(get_the_ID(), 'ammap_importo', true) . '<br/>';
-    echo '<strong>Beneficiario: </strong>' . get_post_meta(get_the_ID(), 'ammap_beneficiario', true) . '<br/>';
-    echo '<strong>Dati Fiscali: </strong>' . get_post_meta(get_the_ID(), 'ammap_fiscale', true) . '<br/>';
-    echo '<strong>Norma: </strong>' . get_post_meta(get_the_ID(), 'ammap_norma', true) . '<br/>';
-    echo '<strong>Modalità: </strong>' . get_post_meta(get_the_ID(), 'ammap_assegnazione', true) . '<br/>';
-    echo '<strong>Responsabile: </strong>' . get_post_meta(get_the_ID(), 'ammap_responsabile', true) . '<br/>';
-    echo '<strong>Determina: </strong>' . get_post_meta(get_the_ID(), 'ammap_determina', true) . '<br/>';
-    echo '<strong>Data: </strong>' . get_post_meta(get_the_ID(), 'ammap_data', true) . '<br/>';
-}
+
 /* =========== Genera Impostazioni e Informazioni ============ */
 if ( is_admin() ){ // admin actions
 	add_action('admin_init', 'ammap_settings');

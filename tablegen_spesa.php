@@ -3,7 +3,7 @@ $a = get_post_meta(get_the_ID(), 'ammap_data', true);
 $b = str_replace( ',', '', $a );
 $a = $b;
 $yearToCompare = date("Y", strtotime($a));
-	if (!($yearToCompare == $anno)) {
+	if ($yearToCompare != $anno && $anno != "all") {
 		return;
 	}
 ?>

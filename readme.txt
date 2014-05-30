@@ -4,8 +4,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: amministrazione, aperta, spese, comuni, pa, amministrazioni, locali, pubblicazione, online, imprese, enti, obbligo, legge, comune, modulo, decreto, 22 giugno, 2012, sovvenzioni, pubblici, pubblico, marco, milesi, amministrazione, trasparente
 Requires at least: 3.3
 Tested up to: 3.6
-Version: 3.0.4
-Stable tag: 3.0.4
+Version: 3.1
+Stable tag: 3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,6 +62,11 @@ Per la visualizzazione dei dati in forma tabellare sono disponibli diversi short
 
 == Changelog ==
 > Questa è la lista completa di tutti gli aggiornamenti, test e correzioni. Ogni volta che una nuova versione viene rilasciata assicuratevi di aggiornare il prima possibile per usufruire delle ultime migliorie!
+
+= Versione 3.1 - 30.05.2014 =
+* Corretti problemi con alcuni parametri query
+* Aggiunta visualizzazione singola per le spese
+* Ottimizzazioni
 
 = Versione 3 #Gasw (Giornata Apera sul Web) - 26.05.2014 =
 * Rebranding wpgov.it
