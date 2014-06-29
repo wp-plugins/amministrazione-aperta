@@ -10,12 +10,13 @@ function register_aa_wpgov_menu_page(){
 function aa_wpgov_settings () {
 
 	echo '<div class="wrap">';
-	screen_icon();
-	echo '<div style="width: 50%;position: absolute;left: 300px;">';
+	echo '<style>.box { width: 70%;position: absolute;left: 300px; } .box h4 { margin-bottom: 0px; } .box li { float: left; width: 250px; padding: 0px 10px 5px 0px; }</style>';
+	echo '<div class="box">';
+	echo '<h4>Ultimi articoli:</h4>';
 	include_once( ABSPATH . WPINC . '/feed.php' );
 	$rss = fetch_feed( 'http://www.wpgov.it/feed' );
 	if ( ! is_wp_error( $rss ) ) :
-    $maxitems = $rss->get_item_quantity( 4 ); 
+    $maxitems = $rss->get_item_quantity( 6 ); 
     $rss_items = $rss->get_items( 0, $maxitems );
 	endif;?>
 
@@ -26,9 +27,10 @@ function aa_wpgov_settings () {
         <?php // Loop through each feed item and display each item as a hyperlink. ?>
         <?php foreach ( $rss_items as $item ) : ?>
             <li>
-                <a href="<?php echo esc_url( $item->get_permalink() ); ?>"
+                <a href="<?php echo esc_url( $item->get_permalink() ); ?>" target="_blank"
                     title="<?php printf( __( 'Posted %s', 'my-text-domain' ), $item->get_date('j F Y | g:i a') ); ?>">
-                    <?php echo esc_html( $item->get_title() ); ?>
+                    <?php echo substr(esc_html( $item->get_title() ), 0, 40);
+					if (strlen(esc_html( $item->get_title() )) > 40) { echo '...'; } ?>
                 </a>
             </li>
         <?php endforeach; ?>
@@ -44,7 +46,7 @@ function aa_wpgov_settings () {
 	<img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
 	</form>
 	</div>';
-	echo '<img src="' . plugin_dir_url(__FILE__) . 'panels/wpa_black.png' . '" alt="">';
+	echo '<a href="http://www.wpgov.it" target="_blank" title="WordPress per la Pubblica Amministrazione"><img src="' . plugin_dir_url(__FILE__) . 'panels/includes/wpa_black.png' . '" alt=""></a>';
 
 	
 	
