@@ -1,7 +1,5 @@
 <?php
-
 /* Display a notice that can be dismissed */
-
 add_action('admin_notices', 'aa_admin_notice');
 function aa_admin_notice() {
 	global $current_user ;
@@ -13,7 +11,6 @@ function aa_admin_notice() {
         echo "</p></div>";
 	} */
 }
-
 add_action('admin_init', 'aa_nag_ignore');
 function aa_nag_ignore() {
 	global $current_user;
@@ -23,5 +20,4 @@ function aa_nag_ignore() {
              add_user_meta($user_id, 'aa_ignore_notice', 'true', true);
 	}
 }
-
 ?>
