@@ -12,11 +12,11 @@ function aa_wpgov_settings () {
     echo '<div class="wrap">';
     echo '<style>.box { max-height: 110px; width: 70%;position: absolute;left: 300px; } .box h4 { margin-bottom: 0px; } .box li { float: left; width: 250px; padding: 0px 10px 5px 0px; }</style>';
     echo '<div class="box">';
-    echo '<h4>Ultimi articoli:</h4>';
+    echo '<h4>Ultime Notizie:</h4>';
     include_once( ABSPATH . WPINC . '/feed.php' );
     $rss = fetch_feed( 'http://www.wpgov.it/feed' );
     if ( ! is_wp_error( $rss ) ) :
-    $maxitems = $rss->get_item_quantity( 6 );
+    $maxitems = $rss->get_item_quantity( 3);
     $rss_items = $rss->get_items( 0, $maxitems );
     endif;?>
 

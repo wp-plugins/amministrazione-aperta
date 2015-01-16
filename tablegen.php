@@ -1,103 +1,80 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="<?php echo plugin_dir_url(__FILE__).'js/jquery.dataTables.js';?>"></script>
-<script type="text/javascript" charset="utf-8" src="<?php echo plugin_dir_url(__FILE__).'TableTools/js/TableTools.js'?>"></script>
-<script type="text/javascript" charset="utf-8" src="<?php echo plugin_dir_url(__FILE__).'TableTools/js/ZeroClipboard.js'?>"></script>
+<script type="text/javascript" src="<?php echo plugin_dir_url(__FILE__); ?>js/excellentexport.min.js"></script>
+<script>
 
-<style type="text/css" title="currentStyle">
-			@import "<?php echo plugin_dir_url(__FILE__).'css/demo_page.css';?>";
-			@import "<?php echo plugin_dir_url(__FILE__).'css/demo_table_jui.css';?>";
-			@import "<?php echo plugin_dir_url(__FILE__).'css/themeroller.css';?>";
-</style>
+(function(document) {
+    'use strict';
 
-<script type="text/javascript" charset="utf-8">
-$(document).ready( function () {
-	var oTable = $('#ammap').dataTable( {
-		"bJQueryUI": true,
-		"sScrollX": "150%",
-		"sScrollXInner": "250%",
-		"bScrollCollapse": true,
-		"bSort": true,
-		"sDom": '<"H"Tfr>t<"F"ip>',
-		"sPaginationType": "full_numbers",
-		"oLanguage": {
-			"sProcessing":   "Caricamento...",
-			"sLengthMenu":   "Visualizza _MENU_ elementi",
-			"sZeroRecords":  "Nessun risultato trovato.",
-			"sInfo":         "Vista da _START_ a _END_ di _TOTAL_ elementi",
-			"sInfoEmpty":    "Vista da 0 a 0 di 0 elementi",
-			"sInfoFiltered": "(filtrati da _MAX_ elementi totali)",
-			"sInfoPostFix":  "",
-			"sSearch":       "Cerca:",
-			"sFirst":    "Inizio",
-			"sPrevious": "Precedente",
-			"sNext":     "Successivo",
-			"sLast":     "Fine",
-			"oPaginate": {
-				"sFirst":    "Inizio",
-				"sPrevious": "Precedente",
-				"sNext":     "Successivo",
-				"sLast":     "Fine",
-				"sDom": '<"H"Tfr>t<"F"ip>',
-				"sDom": 'T<"clear">lfrtip',
-			},
-		},
-		"oTableTools": {
-			"sSwfPath": "<?php echo plugin_dir_url(__FILE__).'TableTools/swf/copy_csv_xls_pdf.swf'?>",
-			"aButtons": [
-				{
-					"sExtends": "csv",
-					"sButtonText": "CSV",
-					"sFileName": "<?php echo get_bloginfo( 'name' );?>_amministrazioneaperta.csv"
-				},
-				{
-					"sExtends": "xls",
-					"sButtonText": "EXCEL",
-					"sFileName": "<?php echo get_bloginfo( 'name' );?>_amministrazioneaperta.xls"
-				},
-				{
-					"sExtends": "pdf",
-					"sButtonText": "PDF",
-					"sPdfOrientation": "landscape",
-					"sPdfMessage": "<?php echo get_bloginfo( 'name' );?> - Amministrazione Aperta",
-					"sFileName": "<?php echo get_bloginfo( 'name' );?>_amministrazioneaperta.pdf"
-				}
-			]
-		}
-	} );
+    var LightTableFilter = (function(Arr) {
 
-new FixedColumns( oTable );
+        var _input;
 
-} );
+        function _onInputEvent(e) {
+            _input = e.target;
+            var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+            Arr.forEach.call(tables, function(table) {
+                Arr.forEach.call(table.tBodies, function(tbody) {
+                    Arr.forEach.call(tbody.rows, _filter);
+                });
+            });
+        }
+
+        function _filter(row) {
+            var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+            row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+        }
+
+        return {
+            init: function() {
+                var inputs = document.getElementsByClassName('light-table-filter');
+                Arr.forEach.call(inputs, function(input) {
+                    input.oninput = _onInputEvent;
+                });
+            }
+        };
+    })(Array.prototype);
+
+    document.addEventListener('readystatechange', function() {
+        if (document.readyState === 'complete') {
+            LightTableFilter.init();
+        }
+    });
+
+})(document);
 
 </script>
+
 <p>Anno di Riferimento:
 <?php if ($anno=="all") {
-	echo '<b>TUTTI</b>';
+    echo '<b>TUTTI</b>';
 } else {
-	echo '<b>' . $anno . '</b>';
+    echo '<b>' . $anno . '</b>';
 }
 ?></p>
-<table id="ammap" class="display">
+
+<table id="amministrazione-aperta" class="order-table table display">
     <thead>
         <tr>
-			<?php if ($tipo == "incarico") { ?>
-			<th>Ragione dell'Incarico</th>
-            <th>Soggetto percettore</th>
-            <th>Importo lordo previsto</th>
-            <th>Importo lordo erogato</th>
-            <th>Data di inizio</th>
-            <th>Data di fine</th>
-			<?php } else { ?>
-            <th>Titolo</th>
-            <th>Importo</th>
-            <th>Beneficiario</th>
-            <th>Dati Fiscali</th>
-            <th>Norma</th>
-            <th>Modalità</th>
-            <th>Responsabile</th>
-            <th>Determina</th>
-            <th>Data</th>
-			<?php } ?>
+            <input type="search" id="s" class="light-table-filter" data-table="order-table" placeholder="Cerca...">
+        </tr>
+        <tr>
+            <?php if ($tipo == "incarico") { ?>
+                <th colspan="2">Ragione dell'Incarico</th>
+                <th>Soggetto percettore</th>
+                <th>Importo lordo previsto</th>
+                <th>Importo lordo erogato</th>
+                <th>Data di inizio</th>
+                <th>Data di fine</th>
+            <?php } else { ?>
+                <th colspan="2">Titolo</th>
+                <th>Importo</th>
+                <th>Beneficiario</th>
+                <th>Dati Fiscali</th>
+                <th>Norma</th>
+                <th>Modalità</th>
+                <th>Responsabile</th>
+                <th>Determina</th>
+                <th>Data</th>
+            <?php } ?>
         </tr>
     </thead>
     <tbody>
@@ -105,7 +82,13 @@ new FixedColumns( oTable );
 <?php query_posts( array( 'post_type' => $tipo, 'orderby' => date, 'order' => DESC, 'posts_per_page' => -1  ) ); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-	if ($tipo == "spesa") { include('tablegen_spesa.php'); } else if ($tipo == "incarico") { include('tablegen_incarico.php'); } else { echo 'Parametro $tipo errato. Impossibile valorizzare il campo'; }
+    if ($tipo == "spesa") {
+        include('tablegen_spesa.php');
+    } else if ($tipo == "incarico") {
+        include('tablegen_incarico.php');
+    } else {
+        echo 'Parametro $tipo errato. Impossibile valorizzare il campo';
+    }
 
 endwhile; else: ?>
  <p>Errore query.<br/>
@@ -116,7 +99,9 @@ endwhile; else: ?>
 
 
     </tbody>
-
-
-
-</table><br/><hr/>
+</table>
+                <?php
+                    echo '<a download="' . get_bloginfo('name') . '-opendata' . $anno . '.xls" href="#" onclick="return ExcellentExport.excel(this, \'amministrazione-aperta\', \'Gare\');"><button>EXCEL</button></a>
+            <a download="' . get_bloginfo('name') . '-opendata' . $anno . '.csv" href="#" onclick="return ExcellentExport.csv(this, \'amministrazione-aperta\');"><button>CSV</button></a>';
+                ?><hr>
+<div class="clear"></div>

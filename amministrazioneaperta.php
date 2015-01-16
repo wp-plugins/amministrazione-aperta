@@ -3,7 +3,7 @@
 Plugin Name: Amministrazione Aperta
 Plugin URI: http://wpgov.it/soluzioni/amministrazione-aperta/
 Description: Software per la pubblicazione di concessioni (sovvenzioni, contributi, sussidi e vantaggi economici) e incarichi, anche in formato open data, come richiesto dal D.Lgs 33/2013.
-Version: 3.1.5
+Version: 3.2
 Author: Marco Milesi
 Author Email: milesimarco@outlook.com
 Author URI: http://marcomilesi.ml
@@ -32,7 +32,7 @@ function aa_register_post_types()
 add_action('admin_init', 'aa_register_post_fields');
 function aa_register_post_fields()
 {
-    update_option( 'aa_version_number', '3.1.5' );
+    update_option( 'aa_version_number', '3.2' );
     include(plugin_dir_path(__FILE__) . 'fields_spese.php');
     include(plugin_dir_path(__FILE__) . 'fields_incarichi.php');
 
@@ -105,6 +105,8 @@ $atshortcode = ob_get_clean();
 return $atshortcode;
 }
 add_shortcode('ammap', 'ammap_func');
+add_shortcode('aa', 'ammap_func');
+
 /* =========== META BOX ============ */
 include(plugin_dir_path(__FILE__) . 'meta-box-class/my-meta-box-class.php');
 
