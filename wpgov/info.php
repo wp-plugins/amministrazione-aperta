@@ -15,7 +15,7 @@
                     <div class="postbox">
                         <h3>Chi sono?</h3>
                         <p>
-                            <img style="margin:2px;border-radius:50px;float:left;" src="<?php echo plugin_dir_url(__FILE__) . 'includes/mm.jpg';?>" />
+                            <img style="margin:2px;border-radius:50px;float:left;" src="<?php echo plugin_dir_url(__FILE__) . 'inc/mm.jpg';?>" />
                             Mi chiamo <b>Marco</b>, ho 20 anni, vivo a <a href="http://www.comune.sanpellegrinoterme.bg.it" target="_blank">San Pellegrino Terme</a> e frequento Ingegneria Informatica presso<br/>l'Università di Bergamo.
                         </p><p>
                             <center style="margin-left: 30px;">
@@ -39,11 +39,14 @@
             </div>
         </div>
 <br><br><br><br>
-<a style="float:left;padding: 5px 20px;" href="https://www.wpgov.it" target="_blank"><img src="<?php echo plugin_dir_url(__FILE__); ?>includes/wpa_icon.png" width="250px" alt=""></a>
+<a style="float:left;padding: 5px 20px;" href="https://www.wpgov.it" target="_blank"><img src="<?php echo plugin_dir_url(__FILE__); ?>inc/wpa_icon.png" width="250px"></a>
                     <p>
                         WP GOV è un progetto nato per offrire a tutti gli enti pubblici soluzioni open-source, gratuite e all'avanguardia in grado di dare risposta ai bisogni di pubblicità e comunicazione per la veicolazione di notizie e informazioni istituzionali verso i cittadini.<br><br>
-                        Il progetto, <b>senza scopo di lucro</b>, è promosso dal sottoscritto per permettere alla PA di avere applicativi innovativi, aggiornati e <b>aperti</b> senza dover ricorrere più piattaforme chiuse e proprietarie che limitano l'autonomia e la libertà della pubblica amministrazione pregiudicandone in certi casi anche la qualità del risultato finale.
+                        Il progetto, <b>senza scopo di lucro</b>, è promosso dal sottoscritto per permettere alla PA di avere applicativi innovativi, aggiornati e <b>aperti</b> senza dover ricorrere a più piattaforme chiuse e proprietarie che limitano l'autonomia e la libertà della pubblica amministrazione pregiudicandone troppo spesso anche la qualità del risultato finale.
                     </p>
+    <br><br><br>
+    <a style="float:right;padding: 5px 20px;" href="http://www.porteapertesulweb.it" target="_blank"><img src="<?php echo plugin_dir_url(__FILE__); ?>inc/pasw.png"></a><br>WPGov lavora in collaborazione con la comunità di pratica Porte Aperte sul Web, promossa dall’Ufficio scolastico regionale per la Lombardia e formata da docenti delle scuole lombarde che condividono l’esigenza di fare parte di un ambiente basato sui <b>principi fortemente collaborativi</b> e di <b>condivisione delle conoscenze</b> nell’ambito della comunicazione web.
+
 </div>
 <style>
 .colonna33 {
