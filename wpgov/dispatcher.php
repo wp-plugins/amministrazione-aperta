@@ -14,14 +14,12 @@ echo '<div class="wrap">';
             <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
             </form>
         </div>
-
+        <br>
     <img style="float:left;padding: 5px 20px;position:absolute;" src="<?php echo plugin_dir_url(__FILE__) . 'inc/wpa_black.png'; ?>">
 
     <div class="welcome-panel-column-container">
     <div class="welcome-panel-column">
         <br><br><br>
-        <h3>Software WPGov</h3>
-        <p class="about-description">Soluzioni WordPress per le PA</p>
     </div>
     <div class="welcome-panel-column">
         <h4>Notizie</h4>
